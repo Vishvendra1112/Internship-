@@ -21,3 +21,124 @@ class Solution {
         }
         return false;
     }
+    
+    public boolean isCycle(int V, int[][] edges) {
+        // Code here
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+        for(int i = 0; i < V; i++) {
+            adj.add(new ArrayList<>());
+        }
+        for(int[] e : edges) {
+            adj.get(e[0]).add(e[1]);
+            adj.get(e[1]).add(e[0]);
+        }
+        boolean[] visited = new boolean[V];
+        for(int i = 0; i < V; i++) {
+            if(!visited[i]) {
+                if(check(i, V, adj, visited))
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean isCycle(int V, int[][] edges) {
+        // Code here
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+        for(int i = 0; i < V; i++) {
+            adj.add(new ArrayList<>());
+        }
+        for(int[] e : edges) {
+            adj.get(e[0]).add(e[1]);
+            adj.get(e[1]).add(e[0]);
+        }
+        boolean[] visited = new boolean[V];
+        for(int i = 0; i < V; i++) {
+            if(!visited[i]) {
+                if(check(i, V, adj, visited))
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean isCycle(int V, int[][] edges) {
+        // Code here
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+        for(int i = 0; i < V; i++) {
+            adj.add(new ArrayList<>());
+        }
+        for(int[] e : edges) {
+            adj.get(e[0]).add(e[1]);
+            adj.get(e[1]).add(e[0]);
+        }
+        boolean[] visited = new boolean[V];
+        for(int i = 0; i < V; i++) {
+            if(!visited[i]) {
+                if(check(i, V, adj, visited))
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean isCycle(int V, int[][] edges) {
+        // Code here
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+        for(int i = 0; i < V; i++) {
+            adj.add(new ArrayList<>());
+        }
+        for(int[] e : edges) {
+            adj.get(e[0]).add(e[1]);
+            adj.get(e[1]).add(e[0]);
+        }
+        boolean[] visited = new boolean[V];
+        for(int i = 0; i < V; i++) {
+            if(!visited[i]) {
+                if(check(i, V, adj, visited))
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean isCycle(int V, int[][] edges) {
+        // Code here
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+        for(int i = 0; i < V; i++) {
+            adj.add(new ArrayList<>());
+        }
+        for(int[] e : edges) {
+            adj.get(e[0]).add(e[1]);
+            adj.get(e[1]).add(e[0]);
+        }
+        boolean[] visited = new boolean[V];
+        for(int i = 0; i < V; i++) {
+            if(!visited[i]) {
+                if(check(i, V, adj, visited))
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public boolean isCycle(int V, int[][] edges) {
+        // Code here
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+        for(int i = 0; i < V; i++) {
+            adj.add(new ArrayList<>());
+        }
+        for(int[] e : edges) {
+            adj.get(e[0]).add(e[1]);
+            adj.get(e[1]).add(e[0]);
+        }
+        boolean[] visited = new boolean[V];
+        for(int i = 0; i < V; i++) {
+            if(!visited[i]) {
+                if(check(i, V, adj, visited))
+                return true;
+            }
+        }
+        return false;
+    }
+}
